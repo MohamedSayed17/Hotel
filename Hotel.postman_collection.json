@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "13c881ab-99c9-45e3-b0b2-eedf280093be",
+		"name": "Hotel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5812710"
+	},
+	"item": [
+		{
+			"name": "Create Reservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "applications/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "applications/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new\",\r\n    \"description\": \"new\",\r\n   \"startDate\": \"2024-07-14T15:44:34.148Z\",\r\n   \"endDate\": \"2024-07-14T15:44:34.148Z\",\r\n   \"RoomId\":\"12dab1f3-3dae-4c8f-aa0b-55a069107792\",\r\n    \"customer\": {\r\n        \"customerName\": \"mohamedali\",\r\n        \"phoneNumber\": \"45-5564\",\r\n        \"address\": \"benisuef\"\r\n    }\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7039/CreateReservation",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"CreateReservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7039/DeleteReservation/415dfd2e-b5d6-44f0-84b0-60abb0d722d3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7039/DeleteReservation/415dfd2e-b5d6-44f0-84b0-60abb0d722d3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"DeleteReservation",
+						"415dfd2e-b5d6-44f0-84b0-60abb0d722d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserReservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7039/GetUserReservation/fdf25703-b03e-4fd4-ae77-11cefd8a68ca",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"GetUserReservation",
+						"fdf25703-b03e-4fd4-ae77-11cefd8a68ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateReservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new\",\r\n    \"description\": \"new\",\r\n   \"startDate\": \"2024-07-18T15:44:34.148Z\",\r\n   \"endDate\": \"2024-07-20T15:44:34.148Z\",\r\n   \"RoomId\":\"be5b3c3f-1617-4e2e-82d4-a3dff3dca122\",\r\n    \"customer\": {\r\n        \"customerName\": \"mohamedali\",\r\n        \"phoneNumber\": \"45-5564\",\r\n        \"address\": \"benisuef\"\r\n    }\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7039/UpdateReservation/0f82878c-2e3c-4418-8b94-0c11ac141b54",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"UpdateReservation",
+						"0f82878c-2e3c-4418-8b94-0c11ac141b54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReservations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7039/GetReservations",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"GetReservations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRooms",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7039/GetRooms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"GetRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VydGVzdCIsImp0aSI6IjQ2MmM2MDc5LTA4NDAtNGE0Yi04YTViLWUyNzE2NjI5YTFkZCIsImVtYWlsIjoic2Rhc2QiLCJ1aWQiOiJmNzUzMGZhMC1lNWZhLTRjNjEtYmEzOC1lODYyYTdhNTdjMmEiLCJleHAiOjE3MjEwNTQ3NDAsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.btPG8Vdt-bQ1mTTxL-H8xqx-yQBTyEBBsLya3OHK5I0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7039/GetCustomers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"GetCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVc2VyIiwianRpIjoiYmU0MGMwY2EtMjM3Yy00OWRiLTk5MDktMzM5ZDJjNjUyZTNmIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJ1aWQiOiJjMjIwMjhiMy04NjkwLTRmYjgtODgyNy03MTc0MWNmY2ExNjAiLCJyb2xlIjoiQWRtaW4iLCJleHAiOjE3MjExNDQ3NjMsImlzcyI6IkhvdGVsIiwiYXVkIjoiQ3VzdG9tZXIifQ.Ve6E6V4FqLpo-xB2vyMbfxVlsrAbvmCrxejY8tfAo7M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"asd\",\r\n  \"lastName\": \"asd\",\r\n  \"username\": \"testnewrole288\",\r\n  \"email\": \"asdasd\",\r\n  \"password\": \"P@ssw0rd225\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7039/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Admin\",\r\n  \"password\": \"P@$$w0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7039/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7039",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
